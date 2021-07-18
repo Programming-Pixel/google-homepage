@@ -1,0 +1,1 @@
+My name is Programming-Pixel, so far I've learned a lot about the command line, I'm actually really starting to perfer it over typical coding as I used too. This seems much more effiencent for the goals I'd like to pursue in the near future.
