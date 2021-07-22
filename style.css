@@ -1,14 +1,127 @@
 html {
     height: 100%;
     min-height: 100%;
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #top-nav {
 display: grid;
-grid-template-columns: 60px 50px 1fr 80px 60px 60px 20px;
+grid-template-columns: 60px 60px 1fr 60px 60px 60px 60px;
 grid-template-rows: 60px;
-text-decoration: none;
+grid-template-areas: 
+"about store . gmail images menu sign-in";
 }
-#top-nav:hover {
-    display: none;
-} 
+
+#about {
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+
+#store {
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+
+#gmail {
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+}
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+}
+
+#splash {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 70px 50px;
+    grid-template-areas: 
+    ". main-logo ."
+    ". find ."
+    ". contain .";
+}
+
+
+#main-logo{   
+    grid-area: main-logo;
+    justify-self: center;
+    align-self: center;
+}
+#find {
+    grid-area: find;
+    justify-self: center;
+    align-self: center;
+}
+#contain {
+    grid-area: contain;
+    justify-self: center;
+    align-self: center;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 1fr 100px 200px 50px;
+    grid-template-rows: 300px;
+    grid-template-areas: 
+    "advert busi how  carbon  priv term sett";
+}
+
+
+#advert {
+    grid-area: advert; 
+    justify-self: center;
+    align-self: center;
+}
+#busi   {
+    grid-area: busi;
+    justify-self: center;
+    align-self: center;
+
+}
+#how    {
+    grid-area: how;
+    justify-self: center;
+    align-self: center;
+}
+#carbon {
+    grid-area: carbon;
+    justify-self: center;
+    align-self: center;
+}
+#priv   {
+    grid-area: priv;
+    justify-self: center;
+    align-self: center;
+
+}
+#term   {
+    grid-area: term;
+    justify-self: center;
+    align-self: center;
+
+}
+#sett   {
+    grid-area: sett;
+    justify-self: center;
+    align-self: center;
+
+}
